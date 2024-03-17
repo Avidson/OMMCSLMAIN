@@ -1,0 +1,24 @@
+{% extends 'navs/other_func_nav.html' %}
+
+
+{% block content %}
+{% load static %}
+
+<center style="margin-top:20px ;">
+<h1>SHARES DETAIL</h1>
+
+<a href="{% url 'Shares:withdrawal_request' %}"><button class="text-center">
+    <i class="bi bi-briefcase"></i><br>Send Request <br> For Shares Withdrawal
+</button>
+</a>
+</center>
+
+<div>
+    <center>
+        <a href="{% url 'main:dashboard' %}">
+        <button class="submit-btn">Close</button>
+            </a>
+    </center>
+    </div>
+
+{% endblock %}

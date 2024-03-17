@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>OMMCSL- Dashboard</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  {% load static %}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/omslogo.png' %}" rel="icon">
+  <link href="{% static 'assets/img/omslogo.png' %}" rel="apple-touch-icon">
+
+
+  {% load static %}
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+
+  {% load static %}
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/passcode.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/shares.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/inAppdonations.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class="page-contact" id="other-func-background">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'home' %}" onclick="alert('You are about to log out of your account.')" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="{% static 'assets/img/omslogo.png' %}" alt="">
+        <h1 class="d-flex align-items-center">OMMCSL</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'home' %}"><h6>Home</h6><i class="bi bi-house"></i></span></a></li>
+          <li><a href="{% url 'main:about' %}"><h6>About</h6><i class="bi bi-book"></i></span></a></li>
+          <li><a href="{% url 'main:services' %}"><h6>Services</h6><i class="bi bi-list"></i></span></a></li>         
+          <li><a href="{% url 'Membership:register' %}"><h6>Register</h6><i class="bi bi-person"></i></span></a></li>
+          <li><a href="{% url 'Loan_Request:loan-request' %}"><h6>Request Loan</h6><span><i class="bi bi-briefcase"></i></span></a></li>         
+          <li><a href="{% url 'main:contact' %}"><h6>Message Us</h6><i class="bi bi-envelope"></i></span></a></li>
+          <li><a href="{% url 'Membership:lets-verify-you' %}"><h6>Get Verified</h6><i class="bi bi-check"></i></span></a></li>
+          <li><a href="{% url 'inAppDonations:payment-gateway' %}"><h6>Send Donation</h6><i class="bi bi-heart"></i></span></a></li>         
+          <li><a href="{% url 'Shares:share_dex' %}"><h6>Shares</h6><i class="bi bi-cash"></i></span></a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" 
+    style="background-image: url({% static 'assets/img/hero-bg2.jpg' %});">
+      <div class="container position-relative d-flex flex-column align-items-center">        
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+
+<center>
+
+    <div class="">
+
+        <h2 style="color:gray">
+            <i>You are offline!</i></h2>
+            <h6 style="color:gray">Please check your network</h6>
+            <br/>
+            <h1 style="color:gray"><strikethrought>OMMCSL</strikethrought>
+            </h1>
+            <h6 style="color:gray">OBidient Multipurpose Movement Cooperative Society.</h6>
+            
+        
+            <br/><br/>
+            <button type='button' class='offline-btn'>&#8635; reload</button>
+
+        </div>
+
+    </div>
+
+</center>
+
+</main>
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+
+<div class="footer-content">
+ <div class="container">
+   <div class="row gy-4">
+     </div>
+
+   
+   </div>
+ </div>
+</div>
+
+<div class="footer-legal fixed-bottom">
+ <div class="container">
+   
+   <div class="copyright">
+     <nav id="nav-bottom">
+       <a href="{% url 'home' %}" class="bi bi-house"></a>
+       <a href="{% url 'Loan_Request:loan-request' %}"> <i class="bi bi-briefcase"></i></a>
+         <a href="{% url 'inAppDonations:payment-gateway' %}"><i class="bi bi-heart"></i></a>
+           <a href="{% url 'Share:share_dex' %}"><i class="bi bi-cash"></i></a>
+     </nav>         
+     </div>
+ </div>
+</div>
+</footer><!-- End Footer --><!-- End Footer -->
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="{% static 'assets/js/newjs.js' %}"></script>
+  <script src="{% static 'assets/js/offline.js' %}"></script>
+  <script src="{% static 'assets/js/serviceworker.js' %}"></script>
+
+</body>
+
+</html>
+

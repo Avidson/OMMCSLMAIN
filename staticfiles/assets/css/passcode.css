@@ -1,0 +1,260 @@
+@import url(../css/colorsAndfonts.css);
+
+/* CSS for the passcode */
+
+.pin-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  
+  .pin-input {
+    font-family: monospace;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    padding: 0;
+    width: calc(1.6ch * 6);
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.6ch) 0 100%/100% 2px no-repeat;
+    color: dimgrey;
+    letter-spacing: .6ch;
+    -webkit-text-security: disc;
+    -moz-text-security: disc;
+  }
+
+
+.cell {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    outline: 2px solid rgb(252, 248, 248);
+    width: 1.5ch;
+    z-index: -1;
+  }
+  
+  .code-input {
+    color: white;
+    font-weight: bold;
+  }
+
+  .pin-input {
+    color: white; 
+  }
+
+  .submit-btn {
+    background-color:  rgb(146, 93, 93);
+    color: white;
+    width: 50%;
+    border-radius: 0px;
+    border-color: rgb(146, 93, 93);
+  }
+
+  .submit-btn:hover {
+    background-color: rgb(22, 13, 13); /* new color */;
+    color: white;
+  }
+
+
+  /* Additional styling for account creation */
+
+  #account-form {
+    border-radius: 15px;
+    margin-bottom: 12px;
+    
+  }
+ 
+  #account-form::placeholder{
+    color:rgb(186, 186, 238)
+  }
+
+  #create-account-submit {
+    background-color: rgb(146, 93, 93);
+    color: white;
+    font-weight: bold;
+    border-radius:0px;
+    border-color: rgb(146, 93, 93);
+    border-style: solid;
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+  }
+
+  #create-account-submit:hover {
+    background-color: #5f2119;
+    border-color: #5f2119;
+    border-style: solid;
+  }
+  
+  #pass{
+    border-radius: 15px;
+    margin-bottom: 12px;
+    
+  }
+ 
+  #pass::placeholder{
+    color:rgb(186, 186, 238);
+  }
+
+  #re-pass{
+    border-radius: 15px;
+    margin-bottom: 12px;
+    
+  }
+ 
+  #re-pass::placeholder{
+    color:rgb(186, 186, 238);
+  }
+  
+
+  /* Code covering the dashboard and the utilities */
+
+  section > .dashboard-utils {
+    display:grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    margin: px;
+    grid-gap: 0px
+  }
+
+  .loan-request {
+    border-style:solid;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-color:rgb(228, 203, 203);
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+  }
+
+  .get-verified {
+    border-style: solid;
+    border-color:rgb(228, 203, 203);
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+  }
+
+  .monthly-due {
+    border-style: solid;
+    border-color:rgb(228, 203, 203);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 10px;
+    padding:10px;
+    background-color: aliceblue;
+   
+  }
+  .message-us {
+    border-style: solid;
+    border-color:rgb(228, 203, 203);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    background-color: aliceblue;
+  }
+
+  .message-us, .monthly-due, .get-verified, .loan-request {
+    background-color: rgb(228, 203, 203);
+    color:rgb(161, 90, 90);
+  }
+
+  /* login page css  code */
+  #login-username{
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
+  #login-password{
+    margin-bottom: 10px;
+    width:200px;
+  }
+
+  #profilepix:hover {
+    content: "Upload";
+    background-color: #a81e0b;
+  }
+  
+  #dashboard-section {
+    border-top: rgb(146, 93, 93) solid 10px;
+    border-bottom: rgb(146, 93, 93) solid 15px;
+    background: url('../img/omsbackground.png') center;
+  }
+
+  #acct-balance {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color:rgb(146, 93, 93);
+    color:white;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  #logout{
+    border-radius: 20px;
+    border-style: solid;
+  }
+
+  /* dashboard footer nav elements */
+  #nav-bottom {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr;
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  #nav-bottom > a {
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+ .verify-class {
+  margin: 15px;
+ }
+
+ .verify-submit {
+  width: 100px;
+  background-color: #5f2119;
+  margin-top: 25px;
+  color: white;
+ }
+
+
+ /* Dashboard Initial */
+ .dashboard-initial {
+        background-color:rgb(146, 93, 93); 
+        color: white; 
+        width:90px;
+        height:90px; 
+        border-radius: 50%;
+        border-style: hidden; 
+        font-size: 30px; 
+        font-weight: bolder;
+ }
+
+ /* Account Balance Row */
+.account-balance-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  margin: 3px;
+  padding: 2px;
+  margin-bottom: 40px;
+}
+
+.account-balance-row > h6 {
+  font-size: xx-small;
+  text-align: left;
+  font-weight: bolder;
+  border-style: groove;
+  border-color: #a81e0b;
+  border-radius: 7px;
+  padding: 5px;
+  margin: 5px;
+}

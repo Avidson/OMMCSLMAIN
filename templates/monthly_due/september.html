@@ -1,0 +1,36 @@
+{% extends 'navs/other_func_nav.html' %}
+
+{% block content %}
+{% load static %}
+
+
+{% if user.is_authenticated %}
+ <section class="form-container">
+   
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+          <form action="" method="post" role="form" class="main-form">
+            <h3>PAYMENT</h3>
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="number" value="1500" name="amount" class="form-control" id="name" placeholder="N0.0" readonly required>
+            </div>
+            </div>
+            <div class="text-center"><button type="submit">Proceed to Pay</button></div>
+          </form>
+        </div><!-- End Contact Form -->
+      </div>
+    </div>
+  </section><!-- End Contact Section -->
+
+  {% else %}
+    <h6>You need to sign-in to perform this task</h6>
+  
+  {% endif %}
+
+  <div style="text-align:center">
+    <a href="{% url 'Monthly_due:home_monthly' %}"><button class="submit-btn">Close</button></a>
+</div>
+
+
+{% endblock %}  
